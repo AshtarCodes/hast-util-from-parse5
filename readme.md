@@ -1,12 +1,10 @@
-# hast-util-from-parse5
+# hast-util-from-parse5-ns
+
+A fork of the original (hast-util-from-parse5) package. This fork uses hastscript-ns as a dependency, which does not lowercase html tag names. Please see hastscript-ns for more information.
 
 [![Build][build-badge]][build]
 [![Coverage][coverage-badge]][coverage]
-[![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
-[![Sponsors][sponsors-badge]][collective]
-[![Backers][backers-badge]][collective]
-[![Chat][chat-badge]][chat]
 
 [**hast**][hast] utility to transform [Parse5’s AST][ast] to a hast
 [*tree*][tree].
@@ -19,7 +17,7 @@ Node 12+ is needed to use it and it must be `import`ed instead of `require`d.
 [npm][]:
 
 ```sh
-npm install hast-util-from-parse5
+npm install hast-util-from-parse5-ns
 ```
 
 ## Use
@@ -150,11 +148,13 @@ The verbose info would looks as follows:
 
 ## Security
 
-Use of `hast-util-from-parse5` can open you up to a
+Use of `hast-util-from-parse5-ns` can open you up to a
 [cross-site scripting (XSS)][xss] attack if Parse5’s AST is unsafe.
 
 ## Related
 
+*   [`hast-util-from-parse5`](https://github.com/syntax-tree/hast-util-from-parse5)
+    — The original package. Transforms Parse5 AST to hast
 *   [`hast-util-to-parse5`](https://github.com/syntax-tree/hast-util-to-parse5)
     — transform hast to Parse5’s AST
 *   [`hast-util-to-nlcst`](https://github.com/syntax-tree/hast-util-to-nlcst)

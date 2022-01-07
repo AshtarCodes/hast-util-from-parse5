@@ -1,7 +1,7 @@
 {
-  "name": "hast-util-from-parse5",
-  "version": "7.1.0",
-  "description": "hast utility to transform from Parse5’s AST",
+  "name": "hast-util-from-parse5-ns",
+  "version": "7.1.1",
+  "description": "A fork of the original hast utility to transform from Parse5’s AST",
   "license": "MIT",
   "keywords": [
     "unist",
@@ -13,13 +13,8 @@
     "change",
     "ast"
   ],
-  "repository": "syntax-tree/hast-util-from-parse5",
-  "bugs": "https://github.com/syntax-tree/hast-util-from-parse5/issues",
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/unified"
-  },
-  "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+  "repository": "AshtarCodes/hast-util-from-parse5",
+  "author": "Ashtar Paniagua <ashtarcodes@gmail.com>",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
   ],
@@ -36,7 +31,7 @@
     "@types/hast": "^2.0.0",
     "@types/parse5": "^6.0.0",
     "@types/unist": "^2.0.0",
-    "hastscript": "^7.0.0",
+    "hastscript-ns": "^7.0.3",
     "property-information": "^6.0.0",
     "vfile": "^5.0.0",
     "vfile-location": "^4.0.0",
@@ -59,7 +54,7 @@
     "xo": "^0.42.0"
   },
   "scripts": {
-    "prepack": "npm run build && npm run format",
+    "prepack": "npm run build",
     "build": "rimraf \"{test/**,lib/**,}*.d.ts\" && tsc && type-coverage",
     "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test-api": "node test/index.js",
